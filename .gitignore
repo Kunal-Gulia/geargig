@@ -5,9 +5,9 @@
 # Large files
 *.apk
 geargig/*.apk
-geargig/blog/*.png
-geargig/images/*.jpeg
-geargig/images/*.png
+# geargig/blog/*.png
+# geargig/images/*.jpeg
+# geargig/images/*.png
 
 # OS files
 .DS_Store
