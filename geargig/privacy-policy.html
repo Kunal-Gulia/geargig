@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy — GearGig respects your privacy and ensures data protection." />
+  <title>Privacy Policy — GearGig</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  
+  <style>
+    .legal-page { padding: 60px 5% 100px; background: var(--clr-white); }
+    .legal-content { max-width: 800px; margin: 0 auto; }
+    .legal-content h1 { 
+      font-family: var(--font-display); font-weight: 900; 
+      font-size: clamp(2rem, 4vw, 3rem); color: var(--clr-dark); 
+      margin-bottom: 30px; line-height: 1.1;
+    }
+    .legal-content h2 { 
+      font-family: var(--font-display); font-weight: 800; 
+      font-size: 1.5rem; color: var(--clr-dark); 
+      margin: 40px 0 16px; 
+    }
+    .legal-content p { 
+      font-size: 1.05rem; line-height: 1.8; color: var(--clr-text); 
+      margin-bottom: 20px; 
+    }
+    .legal-content ul { 
+      margin: 0 0 24px 24px; list-style: disc; 
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .legal-content li { 
+      font-size: 1.05rem; line-height: 1.6; color: var(--clr-text); 
+    }
+    .legal-content .last-updated { 
+      font-size: 0.9rem; color: var(--clr-text-light); 
+      margin-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1); 
+      padding-bottom: 10px; display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="GearGig Home">
+        <img src="./images/logo.png" alt="GearGig Logo" class="navbar__logo-img" />
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html#proof">Why us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="/GearGig.apk" download class="navbar__cta">Download App</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+      <a href="index.html#proof" role="menuitem">Why us</a>
+      <a href="index.html#services" role="menuitem">Services</a>
+      <a href="index.html#how-it-works" role="menuitem">How it works</a>
+      <a href="index.html#faq" role="menuitem">FAQs</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="index.html#cta" class="navbar__cta" role="menuitem">Download App</a>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="legal-content">
+      <span class="last-updated">Last Updated: April 11, 2026</span>
+      <h1>Privacy Policy – GearGig</h1>
+      <p>GearGig respects your privacy and ensures data protection. We are committed to being transparent about how we collect and use your information.</p>
+
+      <h2>1. Information We Collect</h2>
+      <ul>
+        <li>Name, phone number, email</li>
+        <li>Location and service requirements</li>
+      </ul>
+
+      <h2>2. Usage of Information</h2>
+      <ul>
+        <li>To connect clients with service providers</li>
+        <li>To improve platform experience</li>
+        <li>For communication and updates</li>
+      </ul>
+
+      <h2>3. Data Sharing</h2>
+      <p>We do not sell your data. Data is shared only with relevant service providers to facilitate the requested services.</p>
+
+      <h2>4. Security</h2>
+      <p>We implement industry-standard security practices to protect your information from unauthorized access or disclosure.</p>
+
+      <h2>5. Cookies</h2>
+      <p>We may use cookies to enhance user experience and analyze platform traffic.</p>
+
+      <h2>6. Consent</h2>
+      <p>By using our platform, you consent to this policy.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__logo">⚙️ GearGig<sup style="font-size:0.6em;vertical-align:super">®</sup></div>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="app-release.apk" download>Become a GearGig Professional</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <div class="footer__contact">
+      <p>For any queries or support, contact us at</p>
+      <a href="mailto:info@geargig.in">info@geargig.in</a>
+    </div>
+    <p class="footer__copy">© 2026 GearGig. All rights reserved.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+</body>
+</html>

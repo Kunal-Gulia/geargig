@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="GearGig — Trusted on-demand industrial and house help in minutes. Book verified professionals for sweeping, mopping, laundry, bathroom cleaning and more." />
+  <meta name="theme-color" content="#F5C518" />
+  <title>GearGig — Trusted Industrial and House Help in Minutes</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheets — ORDER MATTERS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+
+      <a href="#top" class="navbar__logo" aria-label="GearGig Home">
+        <img src="./images/logo.png" alt="GearGig Logo" class="navbar__logo-img" />
+      </a>
+
+      <ul class="navbar__links" role="list">
+        <li><a href="#proof">Why us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+
+      <a href="/GearGig.apk" download class="navbar__cta">
+        Download App
+      </a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+      <a href="#proof" role="menuitem">Why us</a>
+      <a href="#services" role="menuitem">Services</a>
+      <a href="#how-it-works" role="menuitem">How it works</a>
+      <a href="#faq" role="menuitem">FAQs</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="#cta" class="navbar__cta" role="menuitem">Download App</a>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+  <section class="hero" id="top" aria-label="Hero">
+
+    <div class="hero__content fade-in">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Now Live Across Delhi NCR & Haryana
+      </div>
+      <h1 class="hero__heading">Trusted Industrial and House Help<br>in <em>minutes!</em></h1>
+      <p class="hero__subtext">Your tasks, expertly delivered — exactly when you need them.</p>
+      <p class="hero__cities">
+        <span>📍</span>
+        Now live in Delhi NCR & Haryana
+      </p>
+      <div class="hero__buttons">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <span style="color:var(--clr-yellow); font-weight:800; font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; margin-left:4px;">Coming Soon On</span>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="#" class="btn-store" aria-label="Get GearGig on Google Play">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.18 23.76c.37.21.8.27 1.21.16l11.44-6.61-2.54-2.54-10.11 8.99zm17.03-10.75c.47-.3.79-.82.79-1.42 0-.6-.31-1.11-.77-1.41L17.9 8.84l-2.85 2.85 2.85 2.85 2.31-1.73zM4.39.08C3.98-.03 3.55.03 3.18.28L13.3 10.4l2.54-2.54L4.39.08zM2 1.37v21.26L13.3 11.33 2 1.37z" />
+              </svg>
+              <div class="btn-store__text"><small>Get it on</small><strong>Google Play</strong></div>
+            </a>
+            <a href="#" class="btn-store" aria-label="Download GearGig on the App Store">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              <div class="btn-store__text"><small>Download on the</small><strong>App Store</strong></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual fade-in" style="transition-delay:0.2s">
+      <img src="./images/image11.png" alt="GearGig Platform" class="hero__image" style="width:100%; max-width:550px; height:auto; filter: drop-shadow(0 20px 50px rgba(0,0,0,0.12));">
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     STATS
+════════════════════════════════════════════ -->
+  <section class="stats" id="proof" aria-label="Key Statistics">
+    <div class="stats__item fade-in">
+      <div class="stats__number" data-target="1000">0</div>
+      <div class="stats__label">Service Completed</div>
+    </div>
+    <div class="stats__item fade-in" style="transition-delay:0.1s">
+      <div class="stats__number" data-target="75000">0</div>
+      <div class="stats__label">Hours Saved</div>
+    </div>
+    <div class="stats__item fade-in" style="transition-delay:0.2s">
+      <div class="stats__number" data-target="1500">0</div>
+      <div class="stats__label">GearGig Professionals</div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════ -->
+  <section class="services" id="services" aria-label="Our Services">
+    <div class="services__header">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-heading fade-in">Hire trusted industry experts</h2>
+      <p class="section-subtext fade-in">AC to Air compressors, maintenance to manpower —
+GearGig delivers it all, on demand.</p>
+    </div>
+
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker-wrap">
+        <div class="ticker">
+          <!-- Set 1 -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image4.jpeg" alt="Design & Prototyping" />
+            </div>
+            <h3 class="service-card__name">Design &amp; Prototyping</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image3.jpeg" alt="Air Compressor Maintenance" />
+            </div>
+            <h3 class="service-card__name">Air Compressor Maintenance</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image5.jpeg" alt="Laptop & Computer Service" />
+            </div>
+            <h3 class="service-card__name">Laptop &amp; Computer Service</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image9.jpg" alt="Loading & Unloading" />
+            </div>
+            <h3 class="service-card__name">Loading &amp; Unloading</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image8.jpeg" alt="Inspection Service" />
+            </div>
+            <h3 class="service-card__name">Inspection Service</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image2.jpeg" alt="Electrician & Plumber" />
+            </div>
+            <h3 class="service-card__name">Electrician &amp; Plumber</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image10.jpeg" alt="Audit Service" />
+            </div>
+            <h3 class="service-card__name">Audit Services</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image12.jpg" alt="Industrial & Manpower" />
+            </div>
+            <h3 class="service-card__name">Industrial &amp; Manpower</h3>
+          </div>
+
+          <!-- Set 2 -->
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image4.jpeg" alt="Design & Prototyping" />
+            </div>
+            <h3 class="service-card__name">Design &amp; Prototyping</h3>
+          </div>
+
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image3.jpeg" alt="Air Compressor Maintenance" />
+            </div>
+            <h3 class="service-card__name">Air Compressor Maintenance</h3>
+          </div>
+
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image5.jpeg" alt="Laptop & Computer Service" />
+            </div>
+            <h3 class="service-card__name">Laptop &amp; Computer Service</h3>
+          </div>
+
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image9.jpg" alt="Loading & Unloading" />
+            </div>
+            <h3 class="service-card__name">Loading &amp; Unloading</h3>
+          </div>
+
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image8.jpeg" alt="Inspection Service" />
+            </div>
+            <h3 class="service-card__name">Inspection Service</h3>
+          </div>
+
+          <div class="service-card" aria-hidden="true">
+            <div class="service-card__icon">
+              <img src="./images/image2.jpeg" alt="Electrician & Plumber" />
+            </div>
+            <h3 class="service-card__name">Electrician &amp; Plumber</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image10.jpeg" alt="Audit Service" />
+            </div>
+            <h3 class="service-card__name">Audit Services</h3>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card__icon">
+              <img src="./images/image12.jpg" alt="Industrial & Manpower" />
+            </div>
+            <h3 class="service-card__name">Industrial &amp; Manpower</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="services__more">and many more…</p>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════════ -->
+  <section class="how-it-works" id="how-it-works" aria-label="How It Works">
+    <div class="section-label">How it works</div>
+    <h2 class="section-heading fade-in">Simple steps to get work done</h2>
+    <p class="section-subtext fade-in">Follow these simple steps to get fast, reliable expert support</p>
+
+    <div class="steps-grid">
+      <article class="step-card fade-in">
+        <div class="step-card__number">Step 1</div>
+        <h3 class="step-card__title">Choose from a range of expert services</h3>
+        <p class="step-card__desc">Browse our wide range of expert services — from simple tasks to full projects. Choose exactly what your project needs.</p>
+        <div class="step-card__illustration" aria-hidden="true">
+          <div class="step-phone-mini">
+            <div class="step-phone-mini__screen">🧹</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="step-card fade-in" style="transition-delay:0.12s">
+        <div class="step-card__number">Step 2</div>
+        <h3 class="step-card__title">Add the service into your cart</h3>
+        <p class="step-card__desc">Select multiple services, set your preferences, and customize your booking to suit
+          your exact requirements.</p>
+        <div class="step-card__illustration" aria-hidden="true">
+          <div class="step-phone-mini">
+            <div class="step-phone-mini__screen">🛒</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="step-card fade-in" style="transition-delay:0.24s">
+        <div class="step-card__number">Step 3</div>
+        <h3 class="step-card__title">Choose instant, scheduled. Pay &amp; done!</h3>
+        <p class="step-card__desc">Pick your timing — get help right now, schedule for later, 
+          . Pay securely and relax!</p>
+        <div class="step-card__illustration" aria-hidden="true">
+          <div class="step-phone-mini">
+            <div class="step-phone-mini__screen">✅</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials" aria-label="User Reviews">
+    <div class="testimonials__header">
+      <div class="section-label">Our Testimonials</div>
+      <h2 class="section-heading fade-in">User reviews and feedback</h2>
+      <p class="section-subtext fade-in">See how GearGig has transformed users' experiences through their own words</p>
+    </div>
+
+    <!-- Row 1 — scrolls LEFT -->
+    <div class="reviews-track" aria-hidden="true">
+      <div class="reviews-row reviews-row--left">
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good team and best solution providers</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Praveen Sharma</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Excellent machine inspection support before dispatch. The team ensured every parameter was thoroughly checked, giving us complete confidence in quality and performance</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">G</div>
+            <div>
+              <div class="review-card__name">Gaurav Sharma</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">A very much needed app. Great team great work</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Phalswal Creation</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">GearGig Technology Pvt Ltd stands out for its innovation, technical capability, and structured approach. Their understanding of industry requirements and ability to deliver efficient, scalable solutions is impressive. The team is proactive, knowledgeable, and always supportive. A trusted technology partner.</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">S</div>
+            <div>
+              <div class="review-card__name">Satyendra Singh</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★☆</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good experience.. Very much Satisfied</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">A</div>
+            <div>
+              <div class="review-card__name">Asim Ansari</div>
+            </div>
+          </div>
+        </article>
+        <!-- Duplicate set for seamless loop -->
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good team and best solution providers</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Praveen Sharma</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Excellent machine inspection support before dispatch. The team ensured every parameter was thoroughly checked, giving us complete confidence in quality and performance</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">G</div>
+            <div>
+              <div class="review-card__name">Gaurav Sharma</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">A very much needed app. Great team great work</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Phalswal Creation</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">GearGig Technology Pvt Ltd stands out for its innovation, technical capability, and structured approach. Their understanding of industry requirements and ability to deliver efficient, scalable solutions is impressive. The team is proactive, knowledgeable, and always supportive. A trusted technology partner.</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">S</div>
+            <div>
+              <div class="review-card__name">Satyendra Singh</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★☆</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good experience.. Very much Satisfied</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">A</div>
+            <div>
+              <div class="review-card__name">Asim Ansari</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Row 2 — scrolls RIGHT -->
+    <div class="reviews-track" aria-hidden="true">
+      <div class="reviews-row reviews-row--right">
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Exactly what manufacturing needed! An UrbanClap for factories — convenient, professional, and highly recommended</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Preeti Rarh</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Good work. Keep it up</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">H</div>
+            <div>
+              <div class="review-card__name">Heetesh Punia</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">I had a very good experience..</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">N</div>
+            <div>
+              <div class="review-card__name">Niteesh Rai</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Thank you Gear Gig. Single solution of multiple issues</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">V</div>
+            <div>
+              <div class="review-card__name">Vishal Dalal</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good service</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">A</div>
+            <div>
+              <div class="review-card__name">Amit Kumar</div>
+            </div>
+          </div>
+        </article>
+        <!-- Duplicate set for seamless loop -->
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Exactly what manufacturing needed! An UrbanClap for factories — convenient, professional, and highly recommended</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">P</div>
+            <div>
+              <div class="review-card__name">Preeti Rarh</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Good work. Keep it up</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">H</div>
+            <div>
+              <div class="review-card__name">Heetesh Punia</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">I had a very good experience..</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">N</div>
+            <div>
+              <div class="review-card__name">Niteesh Rai</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Thank you Gear Gig. Single solution of multiple issues</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">V</div>
+            <div>
+              <div class="review-card__name">Vishal Dalal</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <div class="review-card__quote">"</div>
+          <p class="review-card__text">Very good service</p>
+          <div class="review-card__author">
+="review-card__avatar">A</div>
+            <div>
+              <div class="review-card__name">Amit Kumar</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════ -->
+  <section class="faq" id="faq" aria-label="Frequently Asked Questions">
+    <div class="section-label">FAQ's</div>
+    <h2 class="section-heading fade-in">Frequently Asked Questions</h2>
+
+    <div class="faq__list">
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          What is GearGig?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">GearGig is an on-demand home services platform that connects you with verified,
+          professional house help in minutes. Whether you need daily cleaning, deep cleaning, laundry, or bathroom
+          scrubbing — GearGig has you covered with just a few taps.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          How do I book services?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">Simply download the GearGig app, browse available services, add them to your cart,
+          choose your timing (instant, scheduled, or recurring), and confirm your booking. Help arrives in minutes!
+        </div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          Can I book a recurring service?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">Yes! GearGig lets you set up recurring bookings — daily, weekly, or on a custom
+          schedule. Your assigned professional shows up consistently so you never have to worry about your home.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          How can I trust your service?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">All GearGig Professionals undergo thorough background verification and training before
+          joining our platform. Your safety and satisfaction are our top priorities, and every professional is rated
+          after each visit.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          How are your services priced?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">GearGig offers transparent, competitive pricing with no hidden charges. You can see the
+          exact cost before confirming your booking — great value guaranteed.</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          Where can I use GearGig?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">GearGig is currently live in Delhi NCR, Bengaluru, Mumbai, Hyderabad, Chennai, Pune,
+          and Kolkata. We're rapidly expanding to more cities — stay tuned!</div>
+      </div>
+
+      <div class="faq__item">
+        <button class="faq__question" aria-expanded="false">
+          How do I contact support?
+          <span class="faq__toggle">+</span>
+        </button>
+        <div class="faq__answer">Reach our support team through the Help section in the GearGig app, or email us at
+          support@geargig.com. We're available 7 days a week.</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     CTA BANNER
+════════════════════════════════════════════ -->
+  <section class="cta-banner" id="cta" aria-label="Download App">
+    <div>
+      <h2 class="cta-banner__heading">Access Skilled Talent on Tap — Instantly<br>Download GearGig!</h2>
+      <p class="cta-banner__subtext">Customers already trust us for hassle-free service needs.</p>
+      <div class="cta-banner__buttons">
+        <div style="display:flex; flex-direction:column; gap:12px;">
+          <span style="color:var(--clr-yellow); font-weight:800; font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; margin-left:4px;">Coming Soon On</span>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="#" class="btn-store btn-store--yellow" aria-label="Get GearGig on Google Play">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.18 23.76c.37.21.8.27 1.21.16l11.44-6.61-2.54-2.54-10.11 8.99zm17.03-10.75c.47-.3.79-.82.79-1.42 0-.6-.31-1.11-.77-1.41L17.9 8.84l-2.85 2.85 2.85 2.85 2.31-1.73zM4.39.08C3.98-.03 3.55.03 3.18.28L13.3 10.4l2.54-2.54L4.39.08zM2 1.37v21.26L13.3 11.33 2 1.37z" />
+              </svg>
+              <div class="btn-store__text"><small>Get it on</small><strong>Google Play</strong></div>
+            </a>
+            <a href="#" class="btn-store btn-store--yellow" aria-label="Download GearGig on the App Store">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              <div class="btn-store__text"><small>Download on the</small><strong>App Store</strong></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="app-release.apk" download>Become a GearGig Professional</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <div class="footer__contact">
+      <p>For any queries or support, contact us at</p>
+      <a href="mailto:info@geargig.in">info@geargig.in</a>
+    </div>
+    <p class="footer__copy">© 2026 GearGig. All rights reserved.</p>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+     SCRIPTS — deferred, end of body
+════════════════════════════════════════════ -->
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/faq.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/* ============================================
+   GearGig — Reset & Base
+   ============================================ */
+
+*, *::before, *::after {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--clr-text);
+  background: var(--clr-white);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg { display: block; max-width: 100%; }
+a  { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ── Shared section labels ── */
+.section-label {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-weight: 800; font-size: 0.82rem;
+  color: var(--clr-yellow-dark);
+  letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px;
+}
+.section-label::before { content: "✦"; font-size: 0.7rem; }
+
+.section-heading {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--clr-dark); line-height: 1.15; margin-bottom: 10px;
+}
+
+.section-subtext {
+  color: var(--clr-text-light); font-size: 1rem;
+  line-height: 1.7; margin-bottom: 50px;
+}
+
+/* ── Store buttons (reused in hero + cta) ── */
+.btn-store {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--clr-dark); color: var(--clr-white);
+  padding: 12px 22px; border-radius: var(--radius-md);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  flex-shrink: 0;
+}
+.btn-store:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+.btn-store svg { width: 24px; height: 24px; fill: var(--clr-white); flex-shrink: 0; }
+.btn-store__text small { display: block; font-size: 0.65rem; font-weight: 600; opacity: 0.7; }
+.btn-store__text strong { display: block; font-size: 0.95rem; font-weight: 800; }
+
+.btn-store--yellow { background: var(--clr-yellow); color: var(--clr-dark); }
+.btn-store--yellow svg { fill: var(--clr-dark); }
+.btn-store--yellow:hover { box-shadow: 0 8px 24px rgba(245,197,24,0.45); }
+
+/* ── Scroll fade-in ── */
+.fade-in {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }

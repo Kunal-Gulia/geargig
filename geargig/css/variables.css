@@ -1,0 +1,50 @@
+/* ============================================
+   GearGig — Design Tokens & CSS Variables
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --clr-yellow:       #F5C518;
+  --clr-yellow-dark:  #e6b800;
+  --clr-yellow-light: #fef9e7;
+  --clr-black:        #111111;
+  --clr-dark:         #1a1a1a;
+  --clr-gray-bg:      #f7f5f0;
+  --clr-white:        #ffffff;
+  --clr-text:         #333333;
+  --clr-text-light:   #666666;
+  --clr-text-muted:   rgba(255,255,255,0.6);
+
+  /* Typography */
+  --font-display: 'Nunito', sans-serif;
+  --font-body:    'Nunito Sans', sans-serif;
+
+  /* Spacing */
+  --space-xs:  8px;
+  --space-sm:  14px;
+  --space-md:  24px;
+  --space-lg:  40px;
+  --space-xl:  60px;
+  --space-2xl: 90px;
+
+  /* Border Radius */
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   36px;
+  --radius-pill: 50px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 30px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.16);
+  --shadow-xl: 0 40px 80px rgba(0,0,0,0.25);
+
+  /* Transitions */
+  --transition-fast:   0.2s ease;
+  --transition-normal: 0.35s ease;
+  --transition-slow:   0.6s ease;
+
+  /* Layout */
+  --section-pad: 90px 5%;
+}

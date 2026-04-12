@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms of Service — By using GearGig, you agree to our terms and conditions." />
+  <title>Terms of Service — GearGig</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  
+  <style>
+    .legal-page { padding: 60px 5% 100px; background: var(--clr-white); }
+    .legal-content { max-width: 800px; margin: 0 auto; }
+    .legal-content h1 { 
+      font-family: var(--font-display); font-weight: 900; 
+      font-size: clamp(2rem, 4vw, 3rem); color: var(--clr-dark); 
+      margin-bottom: 30px; line-height: 1.1;
+    }
+    .legal-content h2 { 
+      font-family: var(--font-display); font-weight: 800; 
+      font-size: 1.5rem; color: var(--clr-dark); 
+      margin: 40px 0 16px; 
+    }
+    .legal-content p { 
+      font-size: 1.05rem; line-height: 1.8; color: var(--clr-text); 
+      margin-bottom: 20px; 
+    }
+    .legal-content ul { 
+      margin: 0 0 24px 24px; list-style: disc; 
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .legal-content li { 
+      font-size: 1.05rem; line-height: 1.6; color: var(--clr-text); 
+    }
+    .legal-content .last-updated { 
+      font-size: 0.9rem; color: var(--clr-text-light); 
+      margin-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,0.1); 
+      padding-bottom: 10px; display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="GearGig Home">
+        <img src="./images/logo.png" alt="GearGig Logo" class="navbar__logo-img" />
+      </a>
+      <ul class="navbar__links" role="list">
+        <li><a href="index.html#proof">Why us</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <a href="/GearGig.apk" download class="navbar__cta">Download App</a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+      <a href="index.html#proof" role="menuitem">Why us</a>
+      <a href="index.html#services" role="menuitem">Services</a>
+      <a href="index.html#how-it-works" role="menuitem">How it works</a>
+      <a href="index.html#faq" role="menuitem">FAQs</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="index.html#cta" class="navbar__cta" role="menuitem">Download App</a>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <main class="legal-page">
+    <div class="legal-content">
+      <span class="last-updated">Last Updated: April 11, 2026</span>
+      <h1>Terms of Service — GearGig</h1>
+      <p>Welcome to GearGig (<a href="http://www.geargig.in" style="color:var(--clr-yellow-dark); text-decoration:underline;">www.geargig.in</a>). By using our platform, you agree to the following terms:</p>
+
+      <h2>1. Services</h2>
+      <p>GearGig is a platform connecting businesses with skilled professionals for manufacturing, maintenance, inspection, and related services.</p>
+
+      <h2>2. User Responsibilities</h2>
+      <ul>
+        <li>Users must provide accurate details</li>
+        <li>Misuse, fraud, or illegal activity is strictly prohibited</li>
+      </ul>
+
+      <h2>3. Service Execution</h2>
+      <p>GearGig facilitates connections, but service quality and execution are the responsibility of service providers.</p>
+
+      <h2>4. Payments</h2>
+      <ul>
+        <li>Payments are processed securely through third-party payment gateways</li>
+        <li>GearGig may charge service/commission fees</li>
+      </ul>
+
+      <h2>5. Cancellation & Refund</h2>
+      <p>Refer to our Cancellation & Refund Policy for details on how we handle these requests.</p>
+
+      <h2>6. Liability</h2>
+      <p>GearGig is not liable for indirect damages or losses during service execution.</p>
+
+      <h2>7. Changes</h2>
+      <p>We may update these terms at any time without prior notice. Continued use of the platform after changes constitutes acceptance of the new terms.</p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__logo">⚙️ GearGig<sup style="font-size:0.6em;vertical-align:super">®</sup></div>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="app-release.apk" download>Become a GearGig Professional</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <div class="footer__contact">
+      <p>For any queries or support, contact us at</p>
+      <a href="mailto:info@geargig.in">info@geargig.in</a>
+    </div>
+    <p class="footer__copy">© 2026 GearGig. All rights reserved.</p>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+</body>
+</html>

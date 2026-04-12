@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GearGig Blog — Read our latest home cleaning tips and guides." />
+  <title id="page-title">Blog Post — GearGig</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body class="blog-page">
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="GearGig Home">
+      <svg class="navbar__logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 4 l-2.2 4.1c-.6-.1-1.2-.2-1.8-.2s-1.2.1-1.8.2L16 4 l-4 2 1.2 4.6c-.9.7-1.8 1.5-2.5 2.5L6.1 12 4 16l4.1 2.2c-.1.6-.2 1.2-.2 1.8s.1 1.2.2 1.8L4 24l2 4 4.6-1.2c.7.9 1.5 1.8 2.5 2.5L12 33.9 16 36l2.2-4.1c.6.1 1.2.2 1.8.2s1.2-.1 1.8-.2L24 36l4-2-1.2-4.6c.9-.7 1.8-1.5 2.5-2.5l4.6 1.2 2-4-4.1-2.2c.1-.6.2-1.2.2-1.8s-.1-1.2-.2-1.8L37.9 18l-2-4-4.6 1.2c-.7-.9-1.5-1.8-2.5-2.5L30 8.1Z" fill="#1a1a1a"/>
+        <circle cx="22" cy="24" r="8" fill="#f7f5f0"/>
+        <ellipse cx="22" cy="26" rx="6.5" ry="2.5" fill="#F5C518"/>
+        <path d="M15.5 26 Q15.5 20.5 22 19.5 Q28.5 20.5 28.5 26" fill="#F5C518"/>
+        <rect x="14.5" y="25.5" width="15" height="2" rx="1" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="22" cy="20" r="1.2" fill="#F5C518"/>
+      </svg>
+      <span class="navbar__logo-text">GearGig</span>
+    </a>
+
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html#proof">Why us</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#how-it-works">How it works</a></li>
+      <li><a href="index.html#faq">FAQs</a></li>
+      <li><a href="blog.html" style="color:var(--clr-yellow-dark)">Blog</a></li>
+    </ul>
+
+    <a href="index.html#cta" class="navbar__cta">Download App</a>
+
+    <button class="navbar__hamburger" id="hamburger"
+            aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="navbar__mobile-menu" id="mobile-menu" role="menu">
+    <a href="index.html#proof"        role="menuitem">Why us</a>
+    <a href="index.html#services"     role="menuitem">Services</a>
+    <a href="index.html#how-it-works" role="menuitem">How it works</a>
+    <a href="index.html#faq"          role="menuitem">FAQs</a>
+    <a href="blog.html"               role="menuitem">Blog</a>
+    <a href="index.html#cta" class="navbar__cta" role="menuitem">Download App</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════
+     POST HERO (populated by JS from POSTS data)
+════════════════════════════════════════════ -->
+<header class="post-hero" id="post-hero">
+  <div class="post-hero__inner">
+    <a href="blog.html" class="post-hero__back">← Back to Blog</a>
+    <div class="post-hero__category" id="post-category">Loading…</div>
+    <h1 class="post-hero__title" id="post-title"></h1>
+    <div class="post-hero__meta">
+      <div class="post-hero__author">
+        <div class="post-hero__avatar" id="post-avatar">G</div>
+        <div>
+          <div class="post-hero__author-name" id="post-author">GearGig Team</div>
+        </div>
+      </div>
+      <span class="post-hero__divider">·</span>
+      <span class="post-hero__date" id="post-date"></span>
+      <span class="post-hero__divider">·</span>
+      <span class="post-hero__read" id="post-read"></span>
+    </div>
+  </div>
+</header>
+
+<!-- Cover image/emoji -->
+<div class="post-cover" id="post-cover" aria-hidden="true">🏠</div>
+
+
+<!-- ═══════════════════════════════════════════
+     POST BODY (populated by JS)
+════════════════════════════════════════════ -->
+<article class="post-body" id="post-body" aria-label="Blog post content">
+  <!-- Injected by blog.js -->
+</article>
+
+
+<!-- ═══════════════════════════════════════════
+     RELATED POSTS
+════════════════════════════════════════════ -->
+<section class="post-related" aria-label="Related articles">
+  <h2 class="post-related__heading">More from GearGig Blog</h2>
+  <div class="post-related__grid" id="related-grid">
+    <!-- Populated by JS -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__logo">⚙️ GearGig<sup style="font-size:0.6em;vertical-align:super">®</sup></div>
+  <nav class="footer__links" aria-label="Footer navigation">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="app-release.apk" download>Become a GearGig Professional</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+  <div class="footer__contact">
+    <p>For any queries or support, contact us at</p>
+    <a href="mailto:info@geargig.in">info@geargig.in</a>
+  </div>
+  <p class="footer__copy">© 2026 GearGig. All rights reserved.</p>
+</footer>
+
+<script src="js/navbar.js"></script>
+<script src="js/blog.js"></script>
+</body>
+</html>

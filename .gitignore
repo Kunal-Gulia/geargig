@@ -1,0 +1,18 @@
+# Vercel and system files
+.vercel
+.vscode/
+
+# Large files
+*.apk
+geargig/*.apk
+geargig/blog/*.png
+geargig/images/*.jpeg
+geargig/images/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+npm-debug.log

@@ -1,0 +1,79 @@
+/* ============================================
+   GearGig — Hero Section
+   ============================================ */
+
+.hero {
+  background: var(--clr-gray-bg);
+  padding: 80px 5% 60px;
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 40px;
+  min-height: 88vh; overflow: hidden;
+}
+
+/* Left */
+.hero__content { max-width: 540px; flex: 1; }
+
+.hero__badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--clr-yellow); color: var(--clr-dark);
+  font-weight: 800; font-size: 0.82rem;
+  padding: 6px 14px; border-radius: var(--radius-pill);
+  margin-bottom: 22px;
+}
+.hero__badge-dot {
+  width: 8px; height: 8px; background: var(--clr-dark);
+  border-radius: 50%; animation: dot-pulse 2s infinite;
+}
+@keyframes dot-pulse {
+  0%,100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.5); opacity: 0.5; }
+}
+
+.hero__heading {
+  font-family: var(--font-display); font-weight: 900;
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  line-height: 1.1; color: var(--clr-dark); margin-bottom: 18px;
+}
+.hero__heading em { font-style: normal; color: var(--clr-yellow-dark); }
+
+.hero__subtext {
+  font-size: 1.05rem; color: var(--clr-text-light);
+  line-height: 1.7; margin-bottom: 12px;
+}
+
+.hero__cities {
+  font-size: 0.85rem; color: var(--clr-text-light); font-weight: 600;
+  margin-bottom: 32px; display: flex; align-items: flex-start; gap: 6px; line-height: 1.5;
+}
+
+.hero__buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Right — Visual Asset */
+.hero__visual {
+  flex: 1.2; max-width: 600px; position: relative;
+  display: flex; justify-content: center;
+  align-items: center;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Floating cards (Hidden as requested) */
+.float-card {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; min-height: auto; padding: 60px 5% 50px; }
+  .hero__cities, .hero__buttons { justify-content: center; }
+  .hero__visual { display: none; }
+}
