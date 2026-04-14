@@ -190,45 +190,10 @@
 .cta-banner__subtext { color: var(--clr-text-muted); margin-top: 12px; font-size: 0.98rem; }
 .cta-banner__buttons { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
 
-/* ══ FOOTER ══════════════════════════════════ */
-.footer {
-  background: var(--clr-black); color: rgba(255,255,255,0.5);
-  padding: 48px 5% 36px; display: flex; flex-direction: column;
-  align-items: center; text-align: center; gap: 32px; font-size: 0.88rem;
-}
-.footer__logo { font-family: var(--font-display); font-weight: 900; color: var(--clr-white); font-size: 1.5rem; margin-bottom: 8px; }
-.footer__links { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-.footer__links a { color: rgba(255,255,255,0.5); font-weight: 600; transition: color var(--transition-fast); }
-.footer__links a:hover { color: var(--clr-yellow); }
-
-.footer__contact {
-  width: 100%;
-  text-align: center;
-}
-.footer__contact p {
-  color: rgba(255,255,255,0.6);
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-.footer__contact a {
-  color: var(--clr-yellow);
-  font-weight: 800;
-  font-size: 1.1rem;
-  transition: transform var(--transition-fast);
-  display: inline-block;
-}
-.footer__contact a:hover {
-  transform: scale(1.05);
-}
-
-.footer__copy { color: rgba(255,255,255,0.3); width: 100%; text-align: center; }
-
 /* ══ RESPONSIVE ══════════════════════════════ */
 @media (max-width: 768px) {
   .stats__item { min-width: 150px; padding: 32px 16px; }
   .steps-grid  { grid-template-columns: 1fr; }
   .cta-banner  { flex-direction: column; text-align: center; }
   .cta-banner__buttons { justify-content: center; }
-  .footer { flex-direction: column; text-align: center; }
-  .footer__links { justify-content: center; }
 }
