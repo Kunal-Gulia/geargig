@@ -175,7 +175,7 @@
   transition: max-height var(--transition-normal), padding var(--transition-normal);
 }
 .faq__item.open .faq__toggle  { transform: rotate(45deg); }
-.faq__item.open .faq__answer  { max-height: 250px; padding: 0 24px 22px; }
+.faq__item.open .faq__answer  { max-height: 1000px; padding: 0 24px 22px; }
 
 /* ══ CTA BANNER ══════════════════════════════ */
 .cta-banner {
